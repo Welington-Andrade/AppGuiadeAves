@@ -16,40 +16,32 @@
 	<div class="container">
 		<div class="container-fluid" style="margin-top:80px">		
 			<c:import url="/WEB-INF/jsp/header.jsp"/>
-		</div>			
-
-<!-- 		<div class="dropdown"> -->
-<!-- 		    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> -->
-<!-- 		      Aves -->
-<!-- 		    </button> -->
-<!-- 		    <div class="dropdown-menu"> -->
-<!-- 		      <a class="dropdown-item" href="/game">Game</a> -->
-<!-- 		      <a class="dropdown-item" href="/livro">Livro</a> -->
-<!-- 		      <a class="dropdown-item" href="/revista">Revista</a> -->
-<!-- 		    </div> -->
-<!-- 		  </div>	 -->
-<!-- 		<br> -->
+		</div>
 		
 		<c:if test="${not empty msgError}">
 			<div class="alert alert-danger">
 			  <strong>Ops!!</strong> ${msgError}
 			</div>		
-		</c:if>
-		
+		</c:if>		
 		<c:if test="${not empty aves}">
 			<table class="table table-striped">
 			    <thead>
 			      <tr>
 			        <th>ID</th>
 			        <th>NOME</th>
+			        <th>ESPÉCIE</th>
+			        <th>AMEAÇADA</th>
 			        <th></th>
 			      </tr>
 			    </thead>
 			    <tbody>
-			    	<c:forEach var="ave" items="${aves}">
+			    	<c:forEach var="ave" items="${ave}">
 				      <tr>
 				        <td>${ave.id}</td>
-				        <td>${ave}</td>
+				        <td>${ave.nome}</td>
+				        <td>${ave.especie}</td>
+				        <td>${ave.ameacada}</td>
+				        <td></td>
 				        <td><a href="/ave/${ave.id}/excluir">excluir</a></td>
 				      </tr>
 			      </c:forEach>

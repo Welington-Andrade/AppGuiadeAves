@@ -48,7 +48,7 @@
 			    	<c:forEach var="aud" items="${audios}">
 				      <tr>
 				        <td>${aud.id}</td>
-				        <td>${aud.ave.nome}</td>
+				        <td>${aud.nome}</td>
 				        <td><a href="/audio/${aud.id}/excluir">excluir</a></td>
 				        <td><a href="/audio/${aud.id}/alterar">alterar</a></td>
 				      </tr>

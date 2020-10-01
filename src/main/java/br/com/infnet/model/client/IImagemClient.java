@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import br.com.infnet.model.negocio.Imagem;
 
 
-@FeignClient(url = "http://localhost:8081/api/registro", name = "imgClient")
+@FeignClient(url = "http://localhost:8081/api", name = "imgClient")
 public interface IImagemClient {
 	
 	@GetMapping(value = "/imagens")

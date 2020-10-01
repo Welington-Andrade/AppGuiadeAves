@@ -40,27 +40,31 @@
 		    </div>
 		
 		    <div class="form-group">
+		      <label for="usr">Nome:</label>
+		      <input type="text" class="form-control" name="nome" required>
 		      <label for="usr">Local:</label>
 		      <input type="text" class="form-control" name="local" required>
+		      <label for="usr">Data e Hora:</label>
+		      <input type="datetime-local" class="form-control" name="date" required>
 		    </div>
 	
 			<div class="form-group">
 				<label for="usr">Aves:</label>
-				<c:if test="${not empty aves}">
+				<c:if test="${not empty ave}">
 					<div class="form-check">
 						<label class="form-check-label">
-							<c:forEach var="ave" items="${aves}">
-								<input type="checkbox" class="form-check-input" name="produtosIds" value="${ave.id}"> ${ave.local}<br>
+							<c:forEach var="ave" items="${ave}">
+								<input type="checkbox" class="form-check-input" name="avesIds" value="${ave.id}"> ${ave.local}<br>
 							</c:forEach>
 						</label>
 					</div>
 				</c:if>
-				<c:if test="${empty aves}">
+				<c:if test="${empty ave}">
 				<label for="usr">Nenhuma ave cadastrada!</label>
 				</c:if>
 			</div>
 	
-		<c:if test="${empty aves || empty observadores}">
+		<c:if test="${empty ave || empty observadores}">
 			<c:set var="disabled" value="disabled"/>
 		</c:if>
 		

@@ -28,6 +28,8 @@
 		    <div class="form-group">
 		      <label for="usr">Nome:</label>
 		      <input type="text" class="form-control" name="nome" value="${observador.nome}" required>
+		      <label for="usr">Idade:</label>
+		      <input type="number" class="form-control" name="idade" value="${observador.idade}" required>
 		    </div>
 	
 	    	<button type="submit" class="btn btn-primary">Salvar</button>

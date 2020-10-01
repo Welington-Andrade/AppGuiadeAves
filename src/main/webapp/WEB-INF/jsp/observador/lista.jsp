@@ -40,7 +40,7 @@
 			      <tr>
 			        <th>ID</th>
 			        <th>NOME</th>
-			        <th></th>
+			        <th>IDADE</th>
 			        <th></th>
 			      </tr>
 			    </thead>
@@ -49,6 +49,7 @@
 				      <tr>
 				        <td>${obs.id}</td>
 				        <td>${obs.nome}</td>
+				        <td>${obs.idade}</td>
 				        <td><a href="/observador/${obs.id}/excluir">excluir</a></td>
 				        <td><a href="/observador/${obs.id}/alterar">alterar</a></td>
 				      </tr>

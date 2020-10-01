@@ -28,6 +28,11 @@
 		    <div class="form-group">
 		      <label for="usr">Nome:</label>
 		      <input type="text" class="form-control" name="nome" value="${audio.ave.nome}" required>
+		      <label for="usr">Espécie:</label>
+		      <input type="text" class="form-control" name="nome" value="${audio.ave.especie}" required>
+		      <label for="usr">Ameaçada:</label>
+		      <input type="radio" name="ameacada" value="${audio.ave.ameacada}" required>Sim
+		      <input type="radio" name="ameacada" value="${audio.ave.ameacada}" required>Não		      
 		    </div>
 
 	    	<button type="submit" class="btn btn-primary">Salvar</button>

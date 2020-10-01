@@ -1,5 +1,7 @@
 package br.com.infnet.model.negocio;
 
+import java.time.LocalDateTime;
+
 public class Video extends Registro{
 	
 	private Integer id;
@@ -8,11 +10,16 @@ public class Video extends Registro{
 	public Video() {
 	}
 	
-	public Video(Integer id) {
+	public Video(Integer id, Ave ave) {
 		this();
 		this.setId(id);
+		this.setAve(ave);
 	}
 	
+	public Video(Integer id, String nome, String local, LocalDateTime date, Observador observador, Ave ave) {
+		super(id, nome, local, date, observador, ave);
+	}
+
 	public Integer getId() {
 		return id;
 	}

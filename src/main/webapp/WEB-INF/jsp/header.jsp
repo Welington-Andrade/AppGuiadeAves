@@ -11,7 +11,7 @@
 	      <a class="nav-link" href="/observadores">Observadores</a>
 	    </li>
 	    <li class="nav-item">
-	      <a class="nav-link" href="/aves">Aves</a>
+	      <a class="nav-link" href="/ave/lista">Aves</a>
 	    </li>
 	    <li class="nav-item">
 	      <a class="nav-link" href="/imagens">Imagens</a>

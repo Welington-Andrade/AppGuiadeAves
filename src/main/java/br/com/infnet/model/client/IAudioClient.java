@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import br.com.infnet.model.negocio.Audio;
 
 
-@FeignClient(url = "http://localhost:8081/api/registro", name = "audClient")
+@FeignClient(url = "http://localhost:8081/api", name = "audClient")
 public interface IAudioClient {
 	
 	@GetMapping(value = "/audios")

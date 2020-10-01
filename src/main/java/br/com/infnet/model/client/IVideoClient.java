@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import br.com.infnet.model.negocio.Video;
 
-@FeignClient(url = "http://localhost:8081/api/registro", name = "videoClient")
+@FeignClient(url = "http://localhost:8081/api", name = "videoClient")
 public interface IVideoClient {
 	
 	@GetMapping(value = "/videos")

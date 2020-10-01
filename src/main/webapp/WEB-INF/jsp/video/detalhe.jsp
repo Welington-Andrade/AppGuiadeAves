@@ -28,6 +28,11 @@
 		    <div class="form-group">
 		      <label for="usr">Nome:</label>
 		      <input type="text" class="form-control" name="nome" value="${video.ave.nome}" required>
+		      <label for="usr">Espécie:</label>
+		      <input type="text" class="form-control" name="nome" value="${video.ave.especie}" required>
+		      <label for="usr">Ameaçada:</label>
+		      <input type="radio" name="ameacada" value="${video.ave.ameacada}" required>Sim
+		      <input type="radio" name="ameacada" value="${video.ave.ameacada}" required>Não		      
 		    </div>
 
 	    	<button type="submit" class="btn btn-primary">Salvar</button>

@@ -51,8 +51,8 @@
 				      <tr>
 				        <td>${reg.id}</td>
 				        <td>${reg.local}</td>
-				        <td>${reg.observador.nome}</td>
-				        <td>${reg.aves.size()}</td>
+				        <td>${reg.nome}</td>
+				        <td>${reg.ave.nome}</td>
 				        <td><a href="/registro/${reg.id}/consultar">consultar</a></td>
 				        <td><a href="/registro/${reg.id}/excluir">excluir</a></td>
 				      </tr>

@@ -34,12 +34,13 @@
 			</div>		
 		</c:if>
 		
-		<c:if test="${not empty imagens}">
+		<c:if test="${not empty imagem}">
 			<table class="table table-striped">
 			    <thead>
 			      <tr>
 			        <th>ID</th>
 			        <th>NOME</th>
+			        <th>ESPÉCIE</th>
 			        <th></th>
 			        <th></th>
 			      </tr>
@@ -49,6 +50,7 @@
 				      <tr>
 				        <td>${img.id}</td>
 				        <td>${img.ave.nome}</td>
+				        <td>${img.ave.especie}</td>
 				        <td><a href="/imagem/${img.id}/excluir">excluir</a></td>
 				        <td><a href="/imagem/${img.id}/alterar">alterar</a></td>
 				      </tr>
@@ -56,7 +58,7 @@
 			    </tbody>
 			</table>	
 		</c:if>
-		<c:if test="${empty imagens}">
+		<c:if test="${empty imagem}">
 			<div class="alert alert-warning">
 				<strong>Sem cadastros!!</strong>
 			</div>

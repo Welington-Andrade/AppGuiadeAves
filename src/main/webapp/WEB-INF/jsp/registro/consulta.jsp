@@ -43,7 +43,7 @@
 			      </tr>
 			    </thead>
 			    <tbody>
-			    	<c:forEach var="ave" items="${registro.aves}">
+			    	<c:forEach var="ave" items="${registro.ave}">
 				      <tr>
 				        <td>${ave.id}</td>
 				        <td>${ave}</td>
